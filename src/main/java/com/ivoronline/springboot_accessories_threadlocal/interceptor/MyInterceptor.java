@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 @Component
-public class UserInterceptor implements HandlerInterceptor {
+public class MyInterceptor implements HandlerInterceptor {
 
   //=========================================================================================================
   // PRE HANDLE

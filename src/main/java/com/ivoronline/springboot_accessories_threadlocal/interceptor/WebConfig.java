@@ -9,14 +9,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
 
   //PROPERTIES
-  @Autowired private UserInterceptor userInterceptor;
+  @Autowired private MyInterceptor myInterceptor;
   
   //=========================================================================================================
   // ADD INTERCEPTORS
   //=========================================================================================================
   @Override
   public void addInterceptors(InterceptorRegistry registry) {
-      registry.addInterceptor(userInterceptor);
+      registry.addInterceptor(myInterceptor);
   }
   
 }
